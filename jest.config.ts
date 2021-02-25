@@ -32,7 +32,7 @@ export default {
 
     // Indicates which provider should be used to instrument code for coverage
     // eslint-disable-next-line comma-dangle
-    coverageProvider: 'v8'
+    coverageProvider: 'v8',
     // A list of reporter names that Jest uses when writing coverage reports
     // coverageReporters: [
     //   "json",

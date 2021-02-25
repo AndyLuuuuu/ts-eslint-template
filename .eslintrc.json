@@ -4,7 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base", "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -12,9 +12,13 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint/eslint-plugin"
+        "@typescript-eslint/eslint-plugin",
+        "prettier"
     ],
     "rules": {
+        "prettier/prettier": [
+            "error"
+        ],
         "@typescript-eslint/comma-dangle": [
             "error",
             "never"
@@ -35,10 +39,7 @@
                 }
             }
         ],
-        "indent": [
-            "error",
-            4
-        ],
+        "indent": "off",
         "max-len": [
             "error",
             120
